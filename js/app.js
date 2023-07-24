@@ -9,13 +9,13 @@ arr.map((startCount) =>{
     function incremant(){
         counting++
 
-        startCount.innerHTML = counting;
+        startCount.innerHTML = "Your Timer: " + counting;
 
         if(counting == startCount.dataset.number){
             clearInterval(stop)
         }
     }
-    let stop = setInterval(incremant, startCount.dataset.speed)
+    let stop = setInterval(incremant, 100/startCount.dataset.speed)
 })
 
 
