@@ -2,7 +2,7 @@
 	left: 0;
 	right: 0;
 	width: 100%;
-	z-index: -1;
+	z-index: -99;
 	object-fit: cover;
 	position: absolute;
 	background-position: center;
@@ -12,22 +12,24 @@
 	-webkit-filter: blur(3px);
 }
 .item {
-	text-align: center;
+	z-index: 1;
+	left: 0;
+    right: 0;
+    position: absolute;
 	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
 	align-items: center;
 	justify-content: center;
-    position: fixed;
-    left: 0;
-    right: 0;
 }
 .item .counter {
-	margin: 50px 25px;
+	margin: 12px 10px 3px 3px;
 	padding: 15px 30px;
 	display: inline;
 	color: #ffffff;
 	font-weight: bold;
 	border-radius: 4px;
-    background: #f81313;
+	background: #f81313;
 }
 .item .next {
 	padding: 15px 30px;
@@ -38,6 +40,9 @@
 	border-radius: 4px;
 	background-color: #8ca62c;
 }
+
+
+
 footer{
     text-align: center;
 }
@@ -52,4 +57,38 @@ footer small{
     padding-top: 21px;
     color: white;
     font-weight: 500;
+}
+
+/* accrodiam */
+.hero {
+	text-align: center;
+	width: 100%;
+	padding-top: 376px;
+	margin: 0 auto;
+}
+.accordion {
+	background-color: #020024;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 18px;
+	width: 50%;
+	border: none;
+	text-align: left;
+	border-radius: 4px;
+	font-size: 15px;
+	transition: 0.4s;
+}
+  
+  .active, .accordion:hover {
+	background-color: #ccc; 
+	color: black;
+  }
+  
+  .panel {
+	width: 756px;
+	margin: 0 auto;
+	padding: 0 18px;
+	display: none;
+	background-color: white;
+	overflow: hidden;
 }

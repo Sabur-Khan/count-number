@@ -18,22 +18,31 @@ arr.map((startCount) =>{
     let stop = setInterval(incremant, 100/startCount.dataset.speed)
 })
 
+// counter end
+
+let acc = document.querySelectorAll('.accordion')
+
+let ar = Array.from(acc);
+
+ar.map((accItem)=>{
+
+    
+    accItem.addEventListener('click', function() {
+
+        accItem.classList.toggle("active_Hoise_Sir");
+        
+        let pannel = accItem.nextElementSibling;
+
+        if(pannel.style.display === "block") {
+
+            pannel.style.display = "none";
+        }else{
+            
+            pannel.style.display = "block";
+        }
+    })
+})
+// console.log(ar);
 
 
 
-// arr.map((sobur)=>{
-//     console.log(sobur)
-// })
-
-// let myArr = Array.from(counter);
-// myArr.map((countItem)=>{
-//     let count = 0;
-//     function incremant() {
-//         count++
-//         countItem.innerHTML = count;
-//         if(count == countItem.dataset.number){
-//             clearInterval(stop)
-//         }
-//     }
-//     let stop = setInterval(incremant, countItem.dataset.speed)
-// })
