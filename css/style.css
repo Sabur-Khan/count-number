@@ -11,7 +11,7 @@
 	filter: blur(8px);
 	-webkit-filter: blur(3px);
 }
-.counter-item {
+.item {
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -20,16 +20,16 @@
     left: 0;
     right: 0;
 }
-.counter-item .counter {
+.item .counter {
+	margin: 50px 25px;
 	padding: 15px 30px;
 	display: inline;
 	color: #ffffff;
 	font-weight: bold;
-	margin-right: 20px;
 	border-radius: 4px;
     background: #f81313;
 }
-.counter-item .next {
+.item .next {
 	padding: 15px 30px;
 	display: inline;
 	color: #ffffff;
